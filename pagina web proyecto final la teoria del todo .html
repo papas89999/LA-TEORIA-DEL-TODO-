@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Teoría del Todo - Stephen Hawking</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png'), linear-gradient(to bottom, #0a0a23, #1a1a4d); /* Fondo de galaxia con textura de estrellas */
+            color: #e6e6fa; /* Color claro para texto, inspirado en la luz estelar */
+            background-attachment: fixed;
+        }
+        header {
+            text-align: center;
+            background: rgba(0, 0, 50, 0.8); /* Fondo oscuro semitransparente */
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* Sombra con brillo estelar */
+        }
+        header img {
+            max-width: 150px;
+            border: 2px solid #ffffff;
+            border-radius: 50%; /* Logo circular como un planeta */
+        }
+        nav {
+            background: rgba(0, 0, 50, 0.9);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.5); /* Brillo morado galáctico */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #e6e6fa;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #00b7eb; /* Color azul brillante como nebulosa */
+            text-shadow: 0 0 10px #00b7eb;
+        }
+        .chapter {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(20, 20, 60, 0.85); /* Fondo oscuro con transparencia */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        .chapter img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+            margin: 15px 0;
+            border: 2px solid #00b7eb;
+            border-radius: 5px;
+        }
+        hr {
+            border: 1px solid #4b0082; /* Línea morada para separar capítulos */
+            margin: 30px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(20, 20, 60, 0.85);
+        }
+        table, th, td {
+            border: 2px solid #00b7eb; /* Bordes azules brillantes */
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background: #1a1a4d; /* Fondo más oscuro para encabezados */
+            color: #e6e6fa;
+        }
+        td {
+            color: #e6e6fa;
+        }
+        form {
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(20, 20, 60, 0.85);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #e6e6fa;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background: #0a0a23;
+            border: 1px solid #00b7eb;
+            color: #e6e6fa;
+            border-radius: 5px;
+        }
+        form button {
+            background: #4b0082; /* Morado galáctico */
+            color: #ffffff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        form button:hover {
+            background: #00b7eb;
+            box-shadow: 0 0 10px #00b7eb;
+        }
+        /* Efecto de estrellas parpadeantes */
+        @keyframes twinkle {
+            0% { opacity: 0.2; }
+            50% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.3;
+            z-index: -1;
+            animation: twinkle 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con logo y eslogan -->
+    <header>
+        <img src="https://informaticaingenieria.files.wordpress.com/2011/01/logo-prepa-color.jpg?w=320" style="max-width: 150px;">
+        <h1>La Teoría del Todo - Stephen Hawking</h1>
+        <p>Año 2025 Bicentenario de la vida municipal en el Estado de México</p>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#cap1">Capítulo 1: El origen del universo</a></li>
+            <li><a href="#cap2">Capítulo 2: Agujeros negros</a></li>
+            <li><a href="#cap3">Capítulo 3: El tiempo y su flecha</a></li>
+            <li><a href="#cap4">Capítulo 4: La unificación de la física</a></li>
+        </ul>
+    </nav>
+
+    <!-- Biografía de Stephen Hawking -->
+    <section>
+        <h2>Biografía de Stephen Hawking</h2>
+        <p>Stephen Hawking (1942-2018) fue un físico teórico, cosmólogo y autor británico, considerado uno de los científicos más brillantes de su tiempo. A pesar de ser diagnosticado con esclerosis lateral amiotrófica (ELA) a los 21 años, lo que limitó su movilidad y habla, Hawking realizó contribuciones revolucionarias a la cosmología, especialmente en el estudio de los agujeros negros y la teoría del Big Bang. Fue profesor lucasiano de matemáticas en la Universidad de Cambridge y autor de varios libros de divulgación científica, como "La Teoría del Todo" y "Breve historia del tiempo".</p>
+        <p>Su trabajo se centró en unir la relatividad general y la mecánica cuántica, proponiendo conceptos como la radiación de Hawking. A lo largo de su vida, inspiró a millones con su perseverancia y su capacidad para comunicar ideas complejas de manera accesible. Su legado continúa influyendo en la ciencia y la cultura popular.</p>
+        <img src="https://th.bing.com/th/id/OIP.EGmwKz9elxp0AobxCjmtpQHaE7?rs=1&pid=ImgDetMain.jpg" alt="Stephen Hawking" style="max-width: 150px;">
+    </section>
+
+    <!-- Capítulo 1 -->
+    <section id="cap1" class="chapter">
+        <h2>Capítulo 1: El origen del universo</h2>
+        <p>Este capítulo explora cómo el universo comenzó con el Big Bang, una explosión masiva que ocurrió hace aproximadamente 13.800 millones de años. Hawking explica cómo las observaciones astronómicas, como el corrimiento al rojo, respaldan esta teoría y cómo el universo se expandió rápidamente desde un punto singular.</p>
+        <p>Además, se discuten las implicaciones filosóficas y científicas de un universo con un comienzo definido, incluyendo preguntas sobre qué había antes del Big Bang y si el tiempo mismo tuvo un origen. Es un capítulo fascinante que combina ciencia y reflexión profunda.</p>
+        <img src="https://encolombia.com/wp-content/uploads/2022/03/Teoria-del-Big-Bang.jpg" alt="Big Bang">
+        <h3>Reflexión</h3>
+        <p>Este capítulo me hizo reflexionar sobre la inmensidad del universo y nuestra posición en él. La idea de que todo comenzó en un solo punto me parece asombrosa y me lleva a cuestionar el propósito de nuestra existencia en un cosmos tan vasto.</p>
+        <h3>Evidencia</h3>
+        <img src="C:\Users\susu_\Downloads\WhatsApp Image 2025-05-31 at 2.57.13 PM.jpeg" alt="Evidencia Capítulo 1">
+    </section>
+    <hr>
+
+    <!-- Capítulo 2 -->
+    <section id="cap2" class="chapter">
+        <h2>Capítulo 2: Agujeros negros</h2>
+        <p>En este capítulo, Hawking describe los agujeros negros como regiones del espacio con una gravedad tan intensa que ni la luz puede escapar. Explica cómo se forman a partir del colapso de estrellas masivas y cómo su estudio ha revolucionado nuestra comprensión de la física.</p>
+        <p>También introduce el concepto de la radiación de Hawking, que sugiere que los agujeros negros no son completamente "negros", sino que emiten partículas y eventualmente pueden evaporarse. Es un tema que desafía la intuición y abre nuevas preguntas sobre el universo.</p>
+        <img src="https://th.bing.com/th/id/R.661c06a4f2fa344448461b8b29b4613d?rik=wrBp84iiRtYs7g&riu=http%3a%2f%2f1.bp.blogspot.com%2f-QSnvuNFNIwY%2fUjeo93b-r1I%2fAAAAAAAAAIk%2fmnic901PWF8%2fs1600%2fagujero_negro.jpg&ehk=7dwfNdqxW9tXO5%2b5lhuUQVTbu9qZIWpkHaT5a8SxE2A%3d&risl=&pid=ImgRaw&r=0.jpg" alt="Agujero Negro">
+        <h3>Reflexión</h3>
+        <p>Los agujeros negros me parecen un recordatorio de lo poco que aún sabemos sobre el universo. Su misterio me inspira a seguir aprendiendo y a no temer a lo desconocido, porque incluso lo imposible puede tener una explicación científica.</p>
+        <h3>Evidencia</h3>
+        <img src="C:\Users\susu_\Downloads\WhatsApp Image 2025-05-31 at 3.07.08 PM.jpeg" alt="Evidencia Capítulo 2">
+    </section>
+    <hr>
+
+    <!-- Capítulo 3 -->
+    <section id="cap3" class="chapter">
+        <h2>Capítulo 3: El tiempo y su flecha</h2>
+        <p>Este capítulo analiza el concepto del tiempo y su dirección, conocida como la "flecha del tiempo". Hawking explora por qué el tiempo parece avanzar solo en una dirección y cómo esto está relacionado con la entropía y el aumento del desorden en el universo.</p>
+        <p>También discute teorías sobre la posibilidad de viajar en el tiempo y los límites que impone la física actual. Es un tema que combina ciencia con preguntas filosóficas sobre la naturaleza de nuestra realidad.</p>
+        <img src="https://th.bing.com/th/id/OIP.SdWFgNHu3eqH2T7uXV5k5wHaEK?rs=1&pid=ImgDetMain.jpg" alt="Flecha del Tiempo">
+        <h3>Reflexión</h3>
+        <p>La idea de que el tiempo tiene una dirección me hizo pensar en cómo valoramos cada momento. Me enseñó a apreciar el presente, ya que el tiempo no regresa, y a reflexionar sobre cómo nuestras acciones dan forma al futuro.</p>
+        <h3>Evidencia</h3>
+        <img src="C:\Users\susu_\Downloads\WhatsApp Image 2025-05-31 at 3.10.46 PM.jpeg" alt="Evidencia Capítulo 3">
+        <p><a href="file:///C:/Users/susu_/OneDrive/Documentos/la%20teoria%20del%20todo%20lidia%20%20.html">Enlace a la página del libro la teoria del todo primera pagina web</a></p>
+    </section>
+    <hr>
+
+    <!-- Capítulo 4 -->
+    <section id="cap4" class="chapter">
+        <h2>Capítulo 4: La unificación de la física</h2>
+        <p>En este capítulo, Hawking aborda el sueño de los físicos de unificar la relatividad general y la mecánica cuántica en una "teoría del todo". Explica los desafíos de combinar estas dos teorías fundamentales y cómo podrían explicar todos los fenómenos del universo.</p>
+        <p>Habla de conceptos como la teoría de cuerdas y los esfuerzos por encontrar una explicación completa de las leyes que rigen el cosmos. Es un capítulo inspirador que muestra el poder de la ciencia para buscar respuestas definitivas.</p>
+        <img src="https://teoriaonline.com/wp-content/uploads/unificacion-de-la-fisica-teoria-explicada-de-manera-sencilla.jpg" alt="Teoría del Todo">
+        <h3>Reflexión</h3>
+        <p>Este capítulo me motivó a pensar en grande y a no rendirme ante los desafíos. La búsqueda de una teoría unificada me recuerda que la perseverancia y la curiosidad son clave para avanzar, tanto en la ciencia como en la vida.</p>
+        <h3>Evidencia</h3>
+        <img src="C:\Users\susu_\Downloads\WhatsApp Image 2025-05-31 at 3.58.39 PM.jpeg" alt="Evidencia Capítulo 4">
+        <p><a href="https://sites.google.com/view/ramenparadoscom/servicios.com">Enlace a la página realizada en Google</a></p>
+    </section>
+    <hr>
+
+    <!-- Lista de palabras clave -->
+    <section>
+        <h2>Palabras o frases clave del libro</h2>
+        <ul>
+            <li>Big Bang</li>
+            <li>Agujeros negros</li>
+            <li>Radiación de Hawking</li>
+            <li>Flecha del tiempo</li>
+            <li>Teoría del todo</li>
+            <li>Entropía</li>
+            <li>Relatividad general</li>
+            <li>Mecánica cuántica</li>
+            <li>Expansión del universo</li>
+            <li>Teoría de cuerdas</li>
+        </ul>
+    </section>
+
+    <!-- Tabla de actividades por parcial -->
+    <section>
+        <h2>Actividades por parcial</h2>
+        <table>
+            <tr>
+                <th>Parcial</th>
+                <th>Nombre de la actividad</th>
+                <th>Descripción</th>
+                <th>Evidencia</th>
+            </tr>
+            <tr>
+<td>Primer Parcial</td>
+                <td>Lectura y palabras clave</td>
+                <td>Realice una lectura en el salón y coloque palabras clave en postips pero solo en las hojas que me tocaban en esa evaluacion y ademas tambien subraye información importante.</td>
+                <td><img src="C:\Users\susu_\Downloads\WhatsApp Image 2025-05-31 at 2.57.13 PM.jpeg" alt="Evidencia Resumen" style="max-width: 100px;"></td>
+            </tr>
+            <tr>
+<td> Segundo Parcial</td>
+                <td>Lectura y palabras clave</td>
+                <td>Realice una lectura en el salón durante 30min al mismo tiempo subrayando palabras o información de mi interes para al final colocar en postips de colores frases mas importantes para mi.</td>
+                <td><img src="C:\Users\susu_\Downloads\WhatsApp Image 2025-05-31 at 3.07.08 PM.jpeg" alt="Evidencia Cuestionario" style="max-width: 100px;"></td>
+            </tr>
+            <tr>
+<td>Tercer Parcial</td>
+                <td>Glorsario de la teoria del todo</td>
+                <td>En este parcial me toco realizar un engargolado en donde tenia que hacer un glosario con diferentes deficiones del libro desde la primera evaluación hasta la tercera evaluación, la cuales serian las primeras paginas del libro hasta las ultimas paginas de este mismo, coloque imagenes sobre cada defición y al igual coloque ejemplos alusibos a cada defición, este trabajo fue hecho a mano.</td>
+                <td><img src="C:\Users\susu_\Downloads\WhatsApp Image 2025-05-31 at 3.58.39 PM.jpeg" alt="Evidencia Organizador" style="max-width: 100px;"></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Video sobre la obra de teatro -->
+    <section>
+        <h2>Obra de teatro del 22 de mayo</h2>
+        <p>A continuación, se presenta un video de 1 minuto donde hablo sobre la obra de teatro basada en "Los 5 Sentidos Capitales", presentada el jueves 22 de mayo de 2025.</p>
+        <video width="600" controls>
+            <source src="video de explicacion de la obra de teatro.mp4" type="video/mp4">            Tu navegador no soporta el elemento de video.
+        </video>
+    </section>
+
+    <!-- Formulario -->
+    <section>
+        <h2>Formulario sobre el libro</h2>
+        <form>
+            <label for="pregunta1">¿Qué concepto del libro te pareció más interesante y por qué?</label>
+            <textarea id="pregunta1" name="pregunta1" rows="4" required></textarea>
+
+            <label for="pregunta2">¿Cómo crees que las ideas de Hawking pueden aplicarse a la vida cotidiana?</label>
+            <textarea id="pregunta2" name="pregunta2" rows="4" required></textarea>
+
+            <label for="pregunta3">¿Recomendarías "La Teoría del Todo" a otros estudiantes? Explica.</label>
+            <input type="text" id="pregunta3" name="pregunta3" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
